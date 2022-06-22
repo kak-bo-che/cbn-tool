@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cbn-tool"
+version = "0.1.0"
+description = "CLI tool to interact with Chronicle API"
+license = "Apache-2.0"
+authors = ["krishnasantosh" ]
+readme = "README.md"
+packages = [
+    { include = "cbn_cli.py" },
+]
+[tool.poetry.dependencies]
+google-api-python-client = ">=1.11.0"
+parameterized = ">=0.7.4"
+
+
+[tool.poetry.scripts]
+cbn_cli = "cbn_cli:pmain"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -587,6 +587,8 @@ def main(input_args):
   parsed_args = parser.parse_args(input_args)
   parsed_args.func(parsed_args)
 
+def pmain():
+  main(sys.argv[1:])
 
 if __name__ == '__main__':
-  main(sys.argv[1:])
+  pmain()
